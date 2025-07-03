@@ -1,0 +1,6 @@
+2025-07-03 05:22:16,157 - Contact_Book_Logger - INFO - Contact arif created.
+2025-07-03 05:22:49,266 - Contact_Book_Logger - INFO - Contact aziz created.
+2025-07-03 05:23:38,513 - Contact_Book_Logger - INFO - Contact aziz updated.
+2025-07-03 05:23:43,433 - Contact_Book_Logger - INFO - Contact aziz deleted.
+2025-07-03 05:23:54,802 - Contact_Book_Logger - INFO - Total contact count: 1
+2025-07-03 05:23:59,154 - Contact_Book_Logger - INFO - Program exited by user.
