@@ -1,4 +1,4 @@
-# 📒 Contact Book (Python Project)
+# 📒 Contact Book System (Python Project)
 
 A command-line Contact Book application developed in Python. It allows users to create, view, update, delete, search, and count contacts. This project includes robust logging and custom exception handling to ensure a smooth and professional user experience.
 
