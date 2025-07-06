@@ -46,7 +46,7 @@ class ContactBook:
         name = input("Enter your name = ")
         if name in self.contacts:
             print(f"Contact {name} already exists!")
-            logger.warning(f"Create failed: {name} already exists.", exc_info=True)
+            logger.warning(f"Create failed: {name} already exists.")
             raise ContactAlreadyExistsError(name)
         else:
 
@@ -74,14 +74,14 @@ class ContactBook:
     def view_contact(self):
         name = input("Enter contact name to view = ")
         if name not in self.contacts:
-            logger.warning(f"View failed: {name} not found.", exc_info=True)
+            logger.warning(f"View failed: {name} not found.")
             raise ContactNotFoundError(name)
         self.display_contact(name)
 
     def update_contact(self):
         name = input("Enter contact name to update = ")
         if name not in self.contacts:
-            logger.warning(f"Update failed: {name} not found.", exc_info=True)
+            logger.warning(f"Update failed: {name} not found.")
             raise ContactNotFoundError(name)
     
         try:
@@ -108,7 +108,7 @@ class ContactBook:
     def delete_contact(self):
         name = input("Enter contact name to delete = ")
         if name not in self.contacts:
-            logger.warning(f"Delete failed: {name} not found.", exc_info=True)
+            logger.warning(f"Delete failed: {name} not found.")
             raise ContactNotFoundError(name)
         del self.contacts[name]
         print(f"Contact {name} has been deleted successfully!")
