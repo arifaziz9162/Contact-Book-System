@@ -68,7 +68,7 @@ class ContactBook:
                 print(f"Contact {name} has been created successfully!")
                 logger.info(f"Contact {name} created.")
             except ValueError as ve:
-                logger.error(f"Invalid input while creating contact", exc_info=True)
+                logger.error("Invalid input while creating contact", exc_info=True)
                 raise InvalidContactDataError("Age must be an integer.")
 
     def view_contact(self):
@@ -102,7 +102,7 @@ class ContactBook:
             logger.info(f"Contact {name} updated.")
 
         except ValueError as ve:
-            logger.error(f"Invalid input while updating contact", exc_info=True)
+            logger.error("Invalid input while updating contact", exc_info=True)
             raise InvalidContactDataError("Age must be an integer.")
 
     def delete_contact(self):
@@ -180,7 +180,7 @@ class ContactBook:
                 logger.error(f"Custom error: {ce}", exc_info=True)
 
             except Exception as e:
-                logger.error(f"Unexpected error while choosing", exc_info=True)
+                logger.error("Unexpected error while choosing", exc_info=True)
                 print(f"An Unexpected error occurred : {e}")
 
 if __name__ == "__main__":
